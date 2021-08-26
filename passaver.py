@@ -3,7 +3,7 @@
 # Purpose - Auto generate Random Passwords and save it with UserName and CompanyName in text form.
 
 import random
-import clipboard
+#import clipboard
 
 print("\n\t\t** Your PASSWORD Saver. **\n")
 password_length = 10     # Change no. with your desired passwd length.
@@ -14,8 +14,8 @@ value = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890@#$%&*-+(
 password = random.sample(value, password_length)
 password = "".join(password)
 print("Your password is:>> ",password)
-clipboard.copy(password)
-print("* its Copied and use it :)\n")
+#clipboard.copy(password)
+#print("* its Copied and use it :)\n")
 
 asksave = input("Do you want to save this(y/n): ")
 print("")
